@@ -21,7 +21,7 @@ def index(request):
     template = 'blog/index.html'
     posts_list = requesting_post()[:QUANTITY_POSTS]
     context = {
-        "post_list": posts_list,
+        'post_list': posts_list,
     }
     return render(request, template, context)
 
